@@ -8,25 +8,43 @@
 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/override.css">
 
 </head>
 <body>
   <div class="d-flex flex-column bg-white col-12">
+    <!-- Navbar -->
     <nav class="col-12 bg-primary p-3">
-      <div class="col-11 mx-auto">
-        <h2 class="h2 color-white text-bold">ExRyze</h2>
+      <div class="col-11 mx-auto d-flex">
+        <img src="img/logo.png" alt="logo.png" class="h-2 w-fit pr-4">
+        <h2 class="h2 text-white text-bold">ExRyze</h2>
       </div>
     </nav>
-    <div class="col-10 mx-auto d-flex align-items-center p-4">
-      <div class="d-flex flex-column col-8">
-        <h1 class="h1 pb-5">Welcome to My Portofolio</h1>
-        <h4 class="h4">Vaisya Govinanda S.</h4>
+
+    <!-- Header -->
+    <header class="col-10 mx-auto d-flex align-items-center p-5 h-650">
+      <div class="d-flex flex-column col-8 text-dark">
+        <h1 class="h1 pb-5">Portofolio Website</h1>
+        <h4 class="h4">-- Vaisya Govinanda S.</h4>
       </div>
       <div class="col-4">
         <img src="img/profile.png" alt="profile.png" class="w-100 p-5 h-fit">
       </div>
-    </div>
+    </header>
+
+    <!-- Main -->
+    <main class="d-flex flex-column">
+      <section class="p-4 bg-dark text-white">
+        <div class="col-10 mx-auto d-flex align-items-center p-4 h-650">
+          <div class="w-50 p-3">
+            <img src="img/logo.png" alt="logo.png" class="w-75 h-fit p-5">
+          </div>
+          <div class="w-50 p-3">
+            <h2 class="h2 pb-4">About Me</h2>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
 </body>
 </html>

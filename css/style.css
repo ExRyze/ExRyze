@@ -18,16 +18,16 @@
   --dark-secondary: #393E46;
 }
 /* Color */
-.color-primary {color: var(--primary)!important;}
-.color-secondary {color: var(--secondary)!important;}
-.color-edge {color: var(--edge)!important;}
-.color-warning {color: var(--warning)!important;}
-.color-danger {color: var(--danger)!important;}
-.color-success {color: var(--success)!important;}
-.color-white {color: var(--white)!important;}
-.color-light {color: var(--light)!important;}
-.color-dark {color: var(--dark)!important;}
-.color-dark-secondary {color: var(--dark-secondary)!important;}
+.text-primary {color: var(--primary)!important;}
+.text-secondary {color: var(--secondary)!important;}
+.text-edge {color: var(--edge)!important;}
+.text-warning {color: var(--warning)!important;}
+.text-danger {color: var(--danger)!important;}
+.text-success {color: var(--success)!important;}
+.text-white {color: var(--white)!important;}
+.text-light {color: var(--light)!important;}
+.text-dark {color: var(--dark)!important;}
+.text-dark-secondary {color: var(--dark-secondary)!important;}
 /* Background */
 .bg-primary {background-color: var(--primary)!important;}
 .bg-secondary {background-color: var(--secondary)!important;}
