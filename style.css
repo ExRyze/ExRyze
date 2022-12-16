@@ -3,6 +3,7 @@
   --ex-dark: #0f0f0f;
   --ex-dark-blue: #00003a;
   --ex-light-blue: #00a6ff;
+  --ex-red: #ff0009;
 }
 
 * {
@@ -75,7 +76,52 @@ main section.prolog .container * {
 }
 
 main .skill {
-  padding: 1rem;
+  padding: 1rem 0;
   height: 600px;
-  background-color: var(--ex-light-blue);
+  background-color: var(--ex-dark-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+main .skill * {
+  color: var(--ex-white);
+}
+main .skill .title {
+  line-height: 200px;
+}
+main .skill .content {
+  padding: 3rem 0;
+  width: 100%;
+  background-color: var(--ex-red);
+}
+main .skill .content .slider {
+  width: 100%;
+  overflow-x: scroll;
+}
+main .skill .content .slider::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+main .skill .content .slider .slider-container {
+  padding: 0 1rem;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  gap: 1rem;
+}
+main .skill .content .slider .slider-container .slider-item {
+  padding: 1rem;
+  background-color: var(--ex-dark-blue);
+  border-radius: 1.25rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+main .skill .content .slider .slider-container .slider-item * {
+  color: var(--ex-white);
+}
+main .skill .content .slider .slider-container .slider-item img {
+  width: fit-content;
+  height: 50px;
 }
