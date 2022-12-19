@@ -1,0 +1,27 @@
+:root {
+  --ex-primary: rgb(0, 0, 58)!important;
+  --ex-secondary: rgb(240, 240, 240)!important;
+  --ex-dark: rgb(15, 15, 15)!important;
+  --ex-danger: rgb(255, 0, 9)!important;
+}
+
+.bg-primary {background-color: var(--ex-primary)!important;}
+.bg-secondary {background-color: var(--ex-secondary)!important;}
+.bg-dark {background-color: var(--ex-dark)!important;}
+/* .bg-success {background-color: var(--ex-success)!important;}
+.bg-warning {background-color: var(--ex-warning)!important;} */
+.bg-danger {background-color: var(--ex-danger)!important;}
+
+.border-10 {--bs-border-width: 10px;}
+
+.border-primary {border-color: var(--ex-primary)!important;}
+.border-secondary {border-color: var(--ex-secondary)!important;}
+.border-dark {border-color: var(--ex-dark)!important;}
+/* .border-success {border-color: var(--ex-success)!important;}
+.border-warning {border-color: var(--ex-warning)!important;} */
+.border-danger {border-color: var(--ex-danger)!important;}
+
+header {padding: 10rem 3rem;}
+.about div {padding: 5rem 3rem;}
+.frame {width: 80%; aspect-ratio: 1/1; transform: rotate(45deg);}
+.divider-header-to-about {background: linear-gradient(#00003a, #0f0f0f);}
