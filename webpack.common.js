@@ -1,11 +1,13 @@
 const path = require('path');
 // const ESLintPlugin = require('eslint-webpack-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackInjector = require('html-webpack-injector');
 const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: {
-    index: ['bootstrap/dist/css/bootstrap.min.css', './src/js/script.js']
+    index_head: 'bootstrap/dist/css/bootstrap.min.css',
+    script: './src/js/script.js'
   },
   output: {
     filename: 'script.[contenthash].js',
@@ -24,8 +26,11 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: 'index.html'
+      filename: 'index.html',
+      inject: 'body',
+      chunks: ['index_head', 'script']
     }),
+    new HtmlWebpackInjector(),
     // new ESLintPlugin(),
     new MiniCSSExtractPlugin({
       filename: 'style.[contenthash].css'
