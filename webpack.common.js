@@ -6,7 +6,7 @@ const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: {
-    index_head: 'bootstrap/dist/css/bootstrap.min.css',
+    style_head: ['bootstrap/dist/css/bootstrap.min.css', './src/css/style.css'],
     script: './src/js/script.js',
     img: './src/js/img_loader.js'
   },
@@ -29,7 +29,7 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html',
       inject: 'body',
-      chunks: ['index_head', 'script']
+      chunks: ['style_head', 'script']
     }),
     new HtmlWebpackInjector(),
     // new ESLintPlugin(),

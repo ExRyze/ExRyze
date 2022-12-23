@@ -18,3 +18,5 @@ import laravel from '../img/laravel.png';
 import vscode from '../img/vscode.png';
 import figma from '../img/figma.png';
 import github_dark from '../img/github_dark.png';
+
+import intermediateClassofFrontEnd from '../img/intermediateClassofFrontEnd.jpg';
