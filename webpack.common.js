@@ -7,7 +7,8 @@ const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   entry: {
     index_head: 'bootstrap/dist/css/bootstrap.min.css',
-    script: './src/js/script.js'
+    script: './src/js/script.js',
+    img: './src/js/img_loader.js'
   },
   output: {
     filename: 'script.[contenthash].js',
