@@ -22,15 +22,20 @@ ul {list-style: none; padding: 0!important; margin: 0!important;}
 .border-warning {border-color: var(--ex-warning)!important;} */
 .border-danger {border-color: var(--ex-danger)!important;}
 
-header {padding: 10rem 3rem;}
-.about div, .project, .skills-and-tools, .experience {padding: 5rem 3rem;}
+.nav-item a {padding: 0.5rem!important;}
+.target {position: absolute; top: calc(-5rem - 40px);}
+header {padding: 10rem 3rem; position: relative;}
+.about > div, .project, .skills-and-tools, .experience {padding: 5rem 3rem; position: relative;}
 .frame {width: 80%; aspect-ratio: 1/1; transform: rotate(45deg);}
 .divider-header-to-about {background: linear-gradient(#00003a, #0f0f0f);}
 .divider-about-to-project {background: linear-gradient(#0f0f0f, #00003a);}
-/* .divider-project-to-skills-and-tools {background: linear-gradient(#00003a, #f0f0f0);} */
-/* .divider-skills-and-tools-to-experience {background: linear-gradient(#00003a, #f0f0f0);} */
+.divider-project-to-skills-and-tools {border-bottom: 6rem solid #fff; border-right: 1519.2px solid transparent;}
+.divider-skills-and-tools-to-experience {border-top: 6rem solid #fff; border-left: 1519.2px solid transparent;}
+.project-card {border: 2px solid var(--ex-secondary); position: relative;}
+.project-card .target {position: absolute; top: -13.5rem!important;}
 .project-card .card-header img {width: 1.25rem; height: 1.25rem;}
-.project-card .card-body {width: 100%; aspect-ratio: 16/9;}
+.project-card .card-body {width: 100%; aspect-ratio: 16/9; padding: 0; border-top: 2px solid var(--ex-secondary);}
+.project-card .card-body embed {width: 100%; height: 100%;}
 .skills-and-tools-card {border: 3px solid var(--ex-primary);}
 .skills-and-tools-card .card-body {display: flex; flex-direction: column; justify-content: space-between; align-items: center; gap: 1rem; background-color: var(--ex-secondary);}
 .skills-and-tools-card img {width: 5rem; height: fit-content;}

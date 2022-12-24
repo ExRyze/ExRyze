@@ -15,21 +15,34 @@
         <h2>ExRyze</h2>
       </a>
       <div class="ms-auto">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav flex-row gap-1">
           <li class="nav-item">
-            <a href="" class="nav-link">Home</a>
+            <a href="#header" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#project" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills-and-tools" class="nav-link">Skills/Tools</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Experience</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
   <main class="col-12 d-flex flex-column align-items-center text-white">
-    <header class="col-11">
+    <header class="col-11 position-relative">
+      <div class="target" id="header"></div>
       <div class="d-flex align-items-center">
         <div class="col-8">
           <div class="d-flex gap-3 align-items-baseline">
             <h1 class="d-inline-block">I'm Vaisya Govinanda S.</h1>
-            <p class="d-inline-block m-0"> AKA <a href="https://github.com/ExRyze" class="text-white link-primary">ExRyze</a></p>
+            <p class="d-inline-block m-0"> AKA <a target="_blank" href="https://github.com/ExRyze" class="text-white link-primary">ExRyze</a></p>
           </div>
           <p>Ordinary student in SMK Negeri 1 Denpasar</p>
         </div>
@@ -44,6 +57,7 @@
     </div>
     <section class="about col-12 bg-dark">
       <div class="col-11 mx-auto d-flex flex-column gap-3">
+        <div class="target" id="about"></div>
         <h1 class="text-center">About</h1>
         <div class="card bg-secondary">
           <div class="card-body">
@@ -56,34 +70,25 @@
       <div class="col-12 border-top border-10 border-secondary"></div>
     </div>
     <section class="project col-11 mx-auto d-flex flex-column gap-5">
+      <div class="target" id="project"></div>
       <h1>My Projects</h1>
       <div class="col-12 d-flex justify-content-around flex-wrap">
         <div class="project-card card col-5">
-          <div class="card-header d-flex gap-3 bg-dark">
+          <div class="target" id="Ex-BD"></div>
+          <a target="_blank" href="https://exryze.github.io/Dicoding-FrontEnd-IDCamp2022/Pemula%20-%20Menengah/dist/index.html" class="card-header d-flex gap-3 bg-dark">
             <img src="img/logo_ex.png" alt="">
-            <h5 class="m-0">Website</h5>
-          </div>
+            <h5 class="m-0">Ex-BD</h5>
+          </a>
           <div class="card-body">
-
+            <embed src="https://exryze.github.io/Dicoding-FrontEnd-IDCamp2022/Pemula%20-%20Menengah/dist/index.html" type="text/html">
           </div>
         </div>
-        <div class="project-card card col-5">
-          <div class="card-header d-flex gap-3 bg-dark">
-            <img src="img/logo_ex.png" alt="">
-            <h5 class="m-0">Website</h5>
-          </div>
-          <div class="card-body">
-
-          </div>
-        </div>
-
       </div>
     </section>
-    <div class="col-12 py-5 divider-project-to-skills-and-tools">
-      <!-- <div class="col-12 border-top border-10 border-secondary"></div> -->
-    </div>
+    <div class="col-12 divider-project-to-skills-and-tools"></div>
     <section class="col-12 bg-white text-dark">
       <div class="skills-and-tools col-11 mx-auto d-flex flex-column gap-3">
+        <div class="target" id="skills-and-tools"></div>
         <h1>Skills & Tools</h1>
         <div class="px-5 d-flex flex-wrap justify-content-center gap-4">
           <div class="skills-and-tools-card card">
@@ -173,10 +178,9 @@
         </div>
       </div>
     </section>
-    <div class="col-12 py-5 divider-skills-and-tools-to-experience">
-      <!-- <div class="col-12 border-top border-10 border-secondary"></div> -->
-    </div>
+    <div class="col-12 divider-skills-and-tools-to-experience"></div>
     <section class="experience col-11 mx-auto d-flex flex-column gap-5">
+      <div class="target" id="experience"></div>
       <h1>My Experience</h1>
       <div class="d-flex flex-wrap justify-content-around">
         <div class="exp-item card">
@@ -185,9 +189,9 @@
             <div class="bg"></div>
             <div class="content">
               <h5 class="pb-2 border-bottom border-4 border-white m-0">Info :</h5>
-              <p class="p-3">I've been completed middle class of front-end learning path in <a href="https://www.dicoding.com/" class="text-white link-primary">Dicoding</a>.
-                In this class I made a website with ES6, Custom Element, NPM, Webpack, ESLint, AJAX, and API (public). <br><br>
-                The website can be visited here: <a href="https://exryze.github.io/Dicoding-FrontEnd-IDCamp2022/Pemula%20-%20Menengah/dist/index.html" class="text-white link-primary">Ex-BD</a></p>
+              <p class="p-3">I've been finishing middle class of front-end learning path in <a target="_blank" href="https://www.dicoding.com/" class="text-white link-primary">Dicoding</a>.
+                In this class I made a website which displays datas from API (public), and I creating it with ES6, Custom Element, NPM, Webpack, ESLint, and AJAX. <br><br>
+                I have listing it in here: <a target="_self" href="#Ex-BD" class="text-white link-primary">Ex-BD</a></p>
             </div>
           </div>
         </div>
@@ -216,14 +220,14 @@
         </div>
         <ul>
           <li><a class="text-white text-decoration-none"><img src="img/gmail.png" alt=""> <span>vaisyagovinandas@gmail.com</span></a></li>
-          <li><a href="https://github.com/ExRyze" class="text-white text-decoration-none link-primary"><img src="img/github.png" alt=""> <span>ExRyze</span></a></li>
-          <li><a href="https://www.linkedin.com/in/vaisya-govinanda-s-57b0a4249/" class="text-white text-decoration-none link-primary"><img src="img/linkedin.png" alt=""> <span>Vaisya Govinanda S.</span></a></li>
-          <li><a href="#" class="text-white text-decoration-none link-primary"><img src="img/discord.png" alt=""> <span>Ex__#3138</span></a></li>
-          <li><a href="https://www.instagram.com/vaisyagovinanda/" class="text-white text-decoration-none link-primary"><img src="img/instagram.png" alt=""> <span>vaisyagovinanda</span></a></li>
+          <li><a target="_blank" href="https://github.com/ExRyze" class="text-white text-decoration-none link-primary"><img src="img/github.png" alt=""> <span>ExRyze</span></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/vaisya-govinanda-s-57b0a4249/" class="text-white text-decoration-none link-primary"><img src="img/linkedin.png" alt=""> <span>Vaisya Govinanda S.</span></a></li>
+          <li><a target="_blank" href="#" class="text-white text-decoration-none link-primary"><img src="img/discord.png" alt=""> <span>Ex__#3138</span></a></li>
+          <li><a target="_blank" href="https://www.instagram.com/vaisyagovinanda/" class="text-white text-decoration-none link-primary"><img src="img/instagram.png" alt=""> <span>vaisyagovinanda</span></a></li>
         </ul>
       </div>
     </div>
-    <p class="m-0 text-end">Created by <a href="https://github.com/ExRyze" class="text-white link-primary">ExRyze</a></p>
+    <p class="m-0 text-end">Created by <a target="_blank" href="https://github.com/ExRyze" class="text-white link-primary">ExRyze</a></p>
   </footer>
 </body>
 </html>
