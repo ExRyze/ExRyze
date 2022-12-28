@@ -11,7 +11,7 @@
   <nav class="nav position-sticky sticky-top col-12 p-2 border-3 border-bottom border-dark bg-secondary">
     <div class="col-11 mx-auto d-flex">
       <a href="#" class="navbar-brand d-flex gap-3">
-        <img src="img/logo_ex.png" alt="logo.png" width="40" height="40">
+        <img loading="lazy" src="img/logo_ex.png" alt="Logo" width="40" height="40">
         <h2>ExRyze</h2>
       </a>
       <div class="ms-auto">
@@ -20,16 +20,16 @@
             <a href="#header" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#about" class="nav-link">About</a>
+            <a href="#about" class="nav-link">About Me</a>
           </li>
           <li class="nav-item">
-            <a href="#project" class="nav-link">Projects</a>
+            <a href="#project" class="nav-link">Works</a>
           </li>
           <li class="nav-item">
             <a href="#skills-and-tools" class="nav-link">Skills/Tools</a>
           </li>
           <li class="nav-item">
-            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#experience" class="nav-link">Experiences</a>
           </li>
         </ul>
       </div>
@@ -42,45 +42,63 @@
         <div class="col-8">
           <div class="d-flex gap-3 align-items-baseline">
             <h1 class="d-inline-block">I'm Vaisya Govinanda S.</h1>
-            <p class="d-inline-block m-0"> AKA <a target="_blank" href="https://github.com/ExRyze" class="text-white link-primary">ExRyze</a></p>
+            <p class="d-inline-block m-0 fw-light"> AKA <a target="_blank" href="https://github.com/ExRyze" class="text-white link-primary">ExRyze</a></p>
           </div>
-          <p>Ordinary student in SMK Negeri 1 Denpasar</p>
+          <p class="fw-light">Ordinary student from SMK Negeri 1 Denpasar</p>
         </div>
         <div class="col-4 d-flex justify-content-center align-items-center position-relative">
           <div class="frame border border-10 border-secondary rounded-5 position-absolute"></div>
-          <img src="img/logo_ex.png" alt="logo.png" class="col-8">
+          <img loading="lazy" src="img/logo_ex.png" alt="Logo" class="col-8">
         </div>
       </div>
     </header>
     <div class="col-12 py-5 divider-header-to-about">
-      <div class="col-12 border-top border-10 border-secondary"></div>
+      <div class="col-12 border-top border-10 border-white"></div>
     </div>
-    <section class="about col-12 bg-dark">
+    <section class="about col-12 bg-white">
       <div class="col-11 mx-auto d-flex flex-column gap-3">
         <div class="target" id="about"></div>
-        <h1 class="text-center">About</h1>
-        <div class="card bg-secondary">
-          <div class="card-body">
-
+        <h1 class="text-center text-dark">About Me</h1>
+        <div class="p-3  rounded border-10 border border-dark">
+          <div class="p-3 bg-dark rounded d-flex">
+            <div class="col-4 p-3 d-flex flex-column align-items-center border-3 border-end border-white">
+              <div class="col-7 my-5 d-flex justify-content-center align-items-center position-relative">
+                <div class="frame border border-5 border-secondary rounded-5 position-absolute"></div>
+                <img src="img/logo_ex.png" alt="Logo" class=" col-7">
+              </div>
+              <h5>Vaisya Govinanda S.</h5>
+            </div>
+            <div class="col-8 p-3 d-flex align-items-center">
+              <p class="fw-light text-center mx-5 mb-0">My name is Vaisya Govinanda S. I live in Denpasar - Bali, Indonesia. I'm a student from SMK Negeri 1 Denpasar. Majoring in software engineering. I've been in software engineering since 2020.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <div class="col-12 py-5 divider-about-to-project">
-      <div class="col-12 border-top border-10 border-secondary"></div>
+      <div class="col-12 border-top border-10 border-white"></div>
     </div>
     <section class="project col-11 mx-auto d-flex flex-column gap-5">
       <div class="target" id="project"></div>
-      <h1>My Projects</h1>
+      <h1 class="text-center">Works</h1>
       <div class="col-12 d-flex justify-content-around flex-wrap">
         <div class="project-card card col-5">
           <div class="target" id="Ex-BD"></div>
           <a target="_blank" href="https://exryze.github.io/Dicoding-FrontEnd-IDCamp2022/Pemula%20-%20Menengah/dist/index.html" class="card-header d-flex gap-3 bg-dark">
-            <img src="img/logo_ex.png" alt="">
+            <img loading="lazy" src="img/logo_ex.png" alt="Logo">
             <h5 class="m-0">Ex-BD</h5>
           </a>
           <div class="card-body">
             <embed src="https://exryze.github.io/Dicoding-FrontEnd-IDCamp2022/Pemula%20-%20Menengah/dist/index.html" type="text/html">
+          </div>
+          <div class="card-footer bg-dark">
+            <img loading="lazy" src="img/html.png" alt="HTML" height="20">
+            <img loading="lazy" src="img/css.png" alt="CSS" height="20">
+            <img loading="lazy" src="img/javascript.png" alt="JavaScript" height="20">
+            <img loading="lazy" src="img/bootstrap.png" alt="Bootstrap" height="20">
+            <img loading="lazy" src="img/npm.png" alt="NPM" height="20">
+            <img loading="lazy" src="img/webpack.png" alt="Webpack" height="20">
+            <img loading="lazy" src="img/eslint.png" alt="ESLint" height="20">
           </div>
         </div>
       </div>
@@ -89,89 +107,89 @@
     <section class="col-12 bg-white text-dark">
       <div class="skills-and-tools col-11 mx-auto d-flex flex-column gap-3">
         <div class="target" id="skills-and-tools"></div>
-        <h1>Skills & Tools</h1>
+        <h1 class="text-center">Skills & Tools</h1>
         <div class="px-5 d-flex flex-wrap justify-content-center gap-4">
           <div class="skills-and-tools-card card">
             <div class="card-body">
-              <img src="img/html.png" alt="">
+              <img loading="lazy" src="img/html.png" alt="HTML">
               <h6 class="m-0">HTML</h6>
             </div>
           </div>
           <div class="skills-and-tools-card card">
             <div class="card-body">
-              <img src="img/css.png" alt="">
+              <img loading="lazy" src="img/css.png" alt="CSS">
               <h6 class="m-0">CSS</h6>
             </div>
           </div>
           <div class="skills-and-tools-card card">
             <div class="card-body">
-              <img src="img/javascript.png" alt="">
+              <img loading="lazy" src="img/javascript.png" alt="JavaScript">
               <h6 class="m-0">JavaScript</h6>
             </div>
           </div>
           <div class="skills-and-tools-card card">
             <div class="card-body d-flex">
-              <img src="img/php.png" alt="">
+              <img loading="lazy" src="img/php.png" alt="PHP">
               <h6 class="m-0">PHP</h6>
             </div>
           </div>
           <div class="skills-and-tools-card card">
             <div class="card-body d-flex">
-              <img src="img/mysql.png" alt="">
+              <img loading="lazy" src="img/mysql.png" alt="MySQL">
               <h6 class="m-0">MySQL</h6>
             </div>
           </div>
           <div class="skills-and-tools-card card">
             <div class="card-body d-flex">
-              <img src="img/bootstrap.png" alt="">
+              <img loading="lazy" src="img/bootstrap.png" alt="Bootstrap">
               <h6 class="m-0">Bootstrap</h6>
             </div>
           </div>
           <div class="skills-and-tools-card card">
             <div class="card-body d-flex">
-              <img src="img/jquery.png" alt="">
+              <img loading="lazy" src="img/jquery.png" alt="jQuery">
               <h6 class="m-0">jQuery</h6>
             </div>
           </div>
           <div class="skills-and-tools-card card">
             <div class="card-body d-flex">
-              <img src="img/npm.png" alt="">
+              <img loading="lazy" src="img/npm.png" alt="NPM">
               <h6 class="m-0">npm</h6>
             </div>
           </div>
           <div class="skills-and-tools-card card">
             <div class="card-body d-flex">
-              <img src="img/webpack.png" alt="">
+              <img loading="lazy" src="img/webpack.png" alt="Webpack">
               <h6 class="m-0">Webpack</h6>
             </div>
           </div>
           <div class="skills-and-tools-card card">
             <div class="card-body d-flex">
-              <img src="img/eslint.png" alt="">
+              <img loading="lazy" src="img/eslint.png" alt="ESLint">
               <h6 class="m-0">ESLint</h6>
             </div>
           </div>
           <div class="skills-and-tools-card card">
             <div class="card-body d-flex">
-              <img src="img/laravel.png" alt="">
+              <img loading="lazy" src="img/laravel.png" alt="Laravel">
               <h6 class="m-0">Laravel</h6>
             </div>
           </div>
           <div class="skills-and-tools-card card">
             <div class="card-body d-flex">
-              <img src="img/vscode.png" alt="">
+              <img loading="lazy" src="img/vscode.png" alt="Visual Studio Code">
               <h6 class="m-0">Visual Studio Code</h6>
             </div>
           </div>
           <div class="skills-and-tools-card card">
             <div class="card-body d-flex">
-              <img src="img/figma.png" alt="">
+              <img loading="lazy" src="img/figma.png" alt="Figma">
               <h6 class="m-0">Figma</h6>
             </div>
           </div>
           <div class="skills-and-tools-card card">
             <div class="card-body d-flex">
-              <img src="img/github_dark.png" alt="">
+              <img loading="lazy" src="img/github_dark.png" alt="Github">
               <h6 class="m-0">Github</h6>
             </div>
           </div>
@@ -181,10 +199,10 @@
     <div class="col-12 divider-skills-and-tools-to-experience"></div>
     <section class="experience col-11 mx-auto d-flex flex-column gap-5">
       <div class="target" id="experience"></div>
-      <h1>My Experience</h1>
+      <h1 class="text-center">Experiences</h1>
       <div class="d-flex flex-wrap justify-content-around">
         <div class="exp-item card">
-          <img src="img/intermediateClassofFrontEnd.jpg" alt="">
+          <img loading="lazy" src="img/intermediateClassofFrontEnd.jpg" alt="Intermediate Class of Front End">
           <div class="exp-info">
             <div class="bg"></div>
             <div class="content">
@@ -205,7 +223,7 @@
           <h5 class="m-0">ExRyze</h5>
         </div>
         <div class="px-3 py-4 d-flex gap-3">
-          <img src="img/logo_ex.png" alt="" width="80" height="80">
+          <img loading="lazy" src="img/logo_ex.png" alt="Logo" width="80" height="80">
           <p class="pe-4">Thank you for visiting my portfolio website. This website only explains a little about me, and maybe a bit different from me in real life. Hehe...</p>
         </div>
       </div>
@@ -213,17 +231,20 @@
         <div class="pb-2 border-bottom border-5 border-dark">
           <h5 class="m-0">Another Website</h5>
         </div>
+        <ul>
+          <li><a target="_blank" href="https://exryze.github.io/Dicoding-FrontEnd-IDCamp2022/Pemula%20-%20Menengah/dist/index.html" class="text-white text-decoration-none link-primary">Ex-BD</a></li>
+        </ul>
       </div>
       <div class="footer-contact">
         <div class="pb-2 border-bottom border-5 border-dark">
           <h5 class="m-0">Contact</h5>
         </div>
         <ul>
-          <li><a class="text-white text-decoration-none"><img src="img/gmail.png" alt=""> <span>vaisyagovinandas@gmail.com</span></a></li>
-          <li><a target="_blank" href="https://github.com/ExRyze" class="text-white text-decoration-none link-primary"><img src="img/github.png" alt=""> <span>ExRyze</span></a></li>
-          <li><a target="_blank" href="https://www.linkedin.com/in/vaisya-govinanda-s-57b0a4249/" class="text-white text-decoration-none link-primary"><img src="img/linkedin.png" alt=""> <span>Vaisya Govinanda S.</span></a></li>
-          <li><a target="_blank" href="#" class="text-white text-decoration-none link-primary"><img src="img/discord.png" alt=""> <span>Ex__#3138</span></a></li>
-          <li><a target="_blank" href="https://www.instagram.com/vaisyagovinanda/" class="text-white text-decoration-none link-primary"><img src="img/instagram.png" alt=""> <span>vaisyagovinanda</span></a></li>
+          <li><a class="text-white text-decoration-none"><img loading="lazy" src="img/gmail.png" alt="Gmail"> <span>vaisyagovinandas@gmail.com</span></a></li>
+          <li><a target="_blank" href="https://github.com/ExRyze" class="text-white text-decoration-none link-primary"><img loading="lazy" src="img/github.png" alt="Github"> <span>ExRyze</span></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/vaisya-govinanda-s-57b0a4249/" class="text-white text-decoration-none link-primary"><img loading="lazy" src="img/linkedin.png" alt="Linkedin"> <span>Vaisya Govinanda S.</span></a></li>
+          <li><a target="_blank" href="#" class="text-white text-decoration-none link-primary"><img loading="lazy" src="img/discord.png" alt="Discord"> <span>Ex__#3138</span></a></li>
+          <li><a target="_blank" href="https://www.instagram.com/vaisyagovinanda/" class="text-white text-decoration-none link-primary"><img loading="lazy" src="img/instagram.png" alt="Instagram"> <span>vaisyagovinanda</span></a></li>
         </ul>
       </div>
     </div>

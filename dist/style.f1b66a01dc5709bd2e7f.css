@@ -23,14 +23,15 @@ ul {list-style: none; padding: 0!important; margin: 0!important;}
 .border-danger {border-color: var(--ex-danger)!important;}
 
 .nav-item a {padding: 0.5rem!important;}
-.target {position: absolute; top: calc(-5rem - 40px);}
+.target {position: absolute; top: calc(-5rem - 20px);}
 header {padding: 10rem 3rem; position: relative;}
 .about > div, .project, .skills-and-tools, .experience {padding: 5rem 3rem; position: relative;}
 .frame {width: 80%; aspect-ratio: 1/1; transform: rotate(45deg);}
-.divider-header-to-about {background: linear-gradient(#00003a, #0f0f0f);}
-.divider-about-to-project {background: linear-gradient(#0f0f0f, #00003a);}
+/* .divider-header-to-about {background: linear-gradient(#00003a, #f0f0f0);}
+.divider-about-to-project {background: linear-gradient(#f0f0f0, #00003a);} */
 .divider-project-to-skills-and-tools {border-bottom: 6rem solid #fff; border-right: 1519.2px solid transparent;}
 .divider-skills-and-tools-to-experience {border-top: 6rem solid #fff; border-left: 1519.2px solid transparent;}
+.about .about-img {width: 40%;}
 .project-card {border: 2px solid var(--ex-secondary); position: relative;}
 .project-card .target {position: absolute; top: -13.5rem!important;}
 .project-card .card-header img {width: 1.25rem; height: 1.25rem;}
