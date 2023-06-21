@@ -1,0 +1,31 @@
+npm : File C:\Users\User\AppData\Roaming\npm\npm.ps1 cannot be loaded because running 
+scripts is disabled on this system. For more information, see about_Execution_Policies  
+at https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ npm run lint
++ ~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Answer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The error message you encountered indicates that the execution of scripts is currently disabled on your system due to the execution policy set by PowerShell. To resolve this issue, you can change the execution policy to allow script execution.
+
+Here's how you can change the execution policy:
+
+Open a new PowerShell window as an administrator. Right-click on the PowerShell icon and select "Run as administrator."
+
+In the PowerShell window, run the following command:
+
+` Set-ExecutionPolicy -ExecutionPolicy RemoteSigned `
+This command sets the execution policy to RemoteSigned, which allows locally created scripts to run.
+
+You will be prompted to confirm the change. Type Y and press Enter.
+
+Close the PowerShell window.
+
+After changing the execution policy, you should be able to run the npm run dev command without encountering the "scripts is disabled on this system" error.
+
+Note that changing the execution policy can have security implications, so it's recommended to consult with your system administrator or follow your organization's guidelines regarding the execution policy.
+
+====================================================================================================
