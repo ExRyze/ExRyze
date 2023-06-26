@@ -8,7 +8,7 @@ module.exports = {
   entry: {
     style_head: ['bootstrap/dist/css/bootstrap.min.css', './src/css/style.css'],
     script: './src/js/script.js',
-    img: './src/js/img_loader.js'
+    // img: './src/js/img_loader.js'
   },
   output: {
     filename: 'script.[contenthash].js',

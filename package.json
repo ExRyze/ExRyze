@@ -1,12 +1,13 @@
 {
   "name": "exryze",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "start-dev": "webpack serve --config webpack.dev.js",
-    "lint": "eslint --ext .js src/"
+    "lint": "eslint --ext .js src/",
+    "lint-fix": "eslint --fix --ext .js src/"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,8 @@
     "@babel/preset-env": "^7.20.2",
     "babel-loader": "^9.1.0",
     "css-loader": "^6.7.3",
+    "eslint": "^8.43.0",
+    "eslint-config-google": "^0.14.0",
     "file-loader": "^6.2.0",
     "html-webpack-injector": "^1.1.4",
     "html-webpack-plugin": "^5.5.0",
