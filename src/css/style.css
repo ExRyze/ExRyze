@@ -1,7 +1,8 @@
 :root {
-  --navbar-height: 60px;
   --header-hexagon-width: 300px;
-  --header-hexagon-height: 165px;
+  --header-hexagon-height: calc(var(--header-hexagon-width) * 0.57735);
+  --button-hexagon-width: 80px;
+  --button-hexagon-height: calc(var(--button-hexagon-width) * 0.57735);
   --section-padding-x: 80px;
   --section-padding-y: 80px;
 
@@ -36,6 +37,56 @@ body {
   color: var(--ex-blue);
 }
 
+.btn-primary {
+  color: var(--ex-blue);
+}
+
+.btn-primary:hover {
+  color: var(--exs-blue);
+}
+
+/* ==================================================
+  Components
+================================================== */
+.btn-hexagon {
+  width: var(--button-hexagon-width);
+  height: var(--button-hexagon-height);
+  padding: 0;
+  margin: 0;
+  background-color: var(--exs-blue);
+  color: var(--ex-light);
+  font-size: 40px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.btn-hexagon:hover {
+  color: var(--exs-light);
+}
+
+.btn-hexagon:before,
+.btn-hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: calc(var(--button-hexagon-width) / 2) solid transparent;
+  border-right: calc(var(--button-hexagon-width) / 2) solid transparent;
+}
+
+.btn-hexagon:before {
+  bottom: 100%;
+  border-bottom: calc(var(--button-hexagon-height) / 2) solid var(--exs-blue);
+}
+
+.btn-hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: calc(var(--button-hexagon-height) / 2) solid var(--exs-blue);
+}
+
 /* ==================================================
   Navbar
 ================================================== */
@@ -48,9 +99,8 @@ body {
 
 .navbar .nav {
   width: 100%;
-  height: var(--navbar-height);
   max-height: 60px;
-  padding: 0 var(--section-padding-y);
+  padding: 0.5rem var(--section-padding-y);
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
@@ -82,7 +132,7 @@ body {
   Header
 ================================================== */
 .header {
-  min-height: calc(100vh - (var(--navbar-height) + 1rem));
+  min-height: 650px;
   padding: var(--section-padding-x) var(--section-padding-y);
   background-color: var(--exs-dark);
   display: flex;
@@ -98,14 +148,15 @@ body {
 .header .profile {
   width: 50%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
-.profile .container {
+.profile .hexagon {
   width: var(--header-hexagon-width);
   height: var(--header-hexagon-height);
   padding: 0;
+  margin: 0;
   background-color: var(--exs-blue);
   display: flex;
   justify-content: center;
@@ -113,8 +164,8 @@ body {
   position: relative;
 }
 
-.profile .container:before,
-.profile .container:after {
+.profile .hexagon:before,
+.profile .hexagon:after {
   content: "";
   position: absolute;
   width: 0;
@@ -122,18 +173,18 @@ body {
   border-right: calc(var(--header-hexagon-width) / 2) solid transparent;
 }
 
-.profile .container:before {
+.profile .hexagon:before {
   bottom: 100%;
   border-bottom: calc(var(--header-hexagon-height) / 2) solid var(--exs-blue);
 }
 
-.profile .container:after {
+.profile .hexagon:after {
   top: 100%;
   width: 0;
   border-top: calc(var(--header-hexagon-height) / 2) solid var(--exs-blue);
 }
 
-.profile .container img {
+.profile .hexagon img {
   width: 75%;
   z-index: 1;
 }
